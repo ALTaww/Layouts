@@ -1,0 +1,22 @@
+$font-size-base: 16px;
+$fonts-path: "fonts/";
+
+@mixin setFont ($name, $weight, $src, $style: "normal"){
+    @font-face {
+        font-family: $name;
+        font-weight: $weight;
+        font-style: $style;
+        src: url($src);
+    }
+}
+
+@function PXTOREM($px) {
+    @return $px / $font-size-base * 1rem;
+}
+
+:root {
+    font-size: $font-size-base !important;
+    @media screen and (max-width: 768px) {
+        font-size: $font-size-base - 2px !important;
+    }
+}

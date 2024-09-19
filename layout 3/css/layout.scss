@@ -1,0 +1,68 @@
+@import 'config/colors';
+@import 'config/fonts';
+
+@include setFont(opensans, "normal", $fonts-path + "OpenSans-Regular.ttf", "normal");
+@include setFont(opensans, "bold", $fonts-path + "OpenSans-Bold.ttf");
+@include setFont(opensans, "300", $fonts-path + "OpenSans-Light.ttf");
+@include setFont(opensans, "600", $fonts-path + "OpenSans-Semi-Bold.ttf");
+
+header {
+    .head-top {
+        padding: 6px 0;
+        background-color: $head-top-bg;
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 0;
+            .soc {
+                margin-right: 50px;
+                display: flex;
+                align-items: center;
+                img {
+                    height: 18px;
+                    width: 18px;
+                    margin: 0 6px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:hth-of-type(1) {
+                        background-color: green;
+                    }
+                    &:hth-of-type(1) {
+                        background-color: blue;
+                    }
+                    &:hth-of-type(1) {
+                        background-color: red;
+                    }
+                }
+            }
+            .profile {
+                padding-left: 16px;
+                border-left: 1px solid $border-color;
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    img {
+                        margin-right: 11px;
+                        width: 18px;
+                    }
+                    p {
+                        color: $font-grey-color;
+                        font-size: PXTOREM(12px);
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@import 'responsive/layout.scss';

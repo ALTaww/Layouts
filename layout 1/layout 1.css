@@ -1,0 +1,459 @@
+:root {
+    --color-white: #fff;
+    --color-yellow: #FCFF51;
+    --color-blue: #118DA8;
+    --white-transparent: #FFFFFFB2;
+    --color-gray: #363F46;
+    --color-black: #000;
+    --color-dark: #191919;
+    --color-orange: #FC7E0F;
+    --color-green: #1ED760;
+    --color-red: #F43E37;
+    --color-purple-gradient: #F452FF, #832BC1;
+    --color-orange-gradient: #FF7602, #FF3502;
+    --color-white-lightness: rgba(255, 255, 255, 0.70);
+}
+
+@font-face {
+    font-family: DM Sans;
+    font-weight: 400;
+    src: url(../../fonts/DMSans/DMSans_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: DM Sans;
+    font-weight: 700;
+    src: url(../../fonts/DMSans/DMSans_18pt-Bold.ttf);
+}
+
+body {
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.24s ease;
+}
+
+a:hover {
+    color: var(--color-blue);
+}
+
+.logo:hover svg path {
+    fill: var(--color-blue);
+}
+
+.ulclear {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .head-top {
+    display: inline-flex;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 777px;
+}
+
+header .head-top .navigation {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+header .head-top .navigation a {
+    flex-shrink: 0;
+    color: var(--color-white);
+    font-size: 1.063rem;
+    line-height: 27px;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.24s all ease;
+}
+
+header .head-top .navigation a.active, header .head-top .navigation a:hover {
+    color: var(--color-blue);
+}
+
+main {
+    width: 100%;
+}
+
+main .main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+main .main .cover {
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+}
+
+main .cover .Jacob-image {
+    position: relative;
+}
+
+main .cover .Jacob-image img {
+    border-radius: 12px;
+    background: lightgray 50% / cover no-repeat;
+}
+
+main .cover .Jacob-image svg {
+    color: var(--color-blue);
+    position: absolute;
+    top: -24px;
+    left: -24px;
+}
+
+main .cover .text p {
+    font-size: 4.375rem;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+}
+
+main .cover .text .next {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 74px;
+}
+
+main .cover .text .next p {
+    font-size: 4.688rem;
+}
+
+main .cover .text .next svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .cover .text .Bold {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+main .cover .text .links p {
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: initial;
+}
+
+main .cover .text .links nav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 17px;
+    flex-shrink: 0;
+}
+
+.latest-episodes {
+    margin-top: 100px;
+}
+
+.latest-episodes .headline {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-episodes .headline p {
+    font-size: 4rem;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    display: inline-block;
+}
+
+.latest-episodes .blue-button {
+    border-radius: 6px;
+    background: var(--color-blue);
+    color: var(--color-white);
+    padding: 12px 15px 12px 20px;
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 27px;
+    border: none;
+    outline: none;
+}
+
+.latest-episodes .list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.latest-episodes .list .episode {
+    border-radius: 32px;
+    background: var(--color-black);
+    width: 100%;
+}
+
+.latest-episodes .list .episode .ep-content {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 53px;
+}
+.latest-episodes .list .episode .ep-content .ep-text .name {
+    border-radius: 6px;
+    background: var(--color-dark);
+    padding: 0 16px;
+    display: inline-block;
+    margin-bottom: 55px;
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+
+.latest-episodes .list .episode .ep-content .ep-text .ep-number {
+    margin-bottom: 32px;
+    font-size: 1.063rem;
+    line-height: 27px;
+    color: var(--color-blue);
+}
+
+.latest-episodes .list .episode .ep-content .ep-text .big-text {
+    font-size: 4rem;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    margin-bottom: 28px;
+}
+
+.latest-episodes .list .episode .ep-content .ep-text .small-text {
+    color: var(--color-white-lightness);
+    font-size: 1.375rem;
+    line-height: 33px;
+}
+
+.main .Jacob {
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.main .Jacob .Jacob-text .arrow button {
+    border-radius: 400px;
+    background: var(--color-blue);
+    border: none;
+    outline: none;
+    width: 112px;
+    height: 112px;
+}
+
+.main .Jacob .Jacob-text .blue-text {
+    margin-top: 20px;
+    color: var(--color-blue);
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+
+.main .Jacob .Jacob-text .Jacob-name {
+    font-size: 4.063rem;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+}
+
+.main .Jacob .Jacob-text .texts {
+    margin-top: 28px;
+    color: var(--color-white-lightness);
+    font-size: 1.375rem;
+    line-height: 33px;
+}
+
+.main .Jacob > img {
+    border-radius: 12px;
+}
+
+.main .subscribe {
+    position: relative;
+    margin-top: 200px;
+}
+
+.main .subscribe .sub-content {
+    border-radius: 32px;
+    background: var(--color-black);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 75px 60px;
+}
+
+.main .subscribe .sub-content .sub-text .email-text {
+    color: var(--color-blue);
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+
+.main .subscribe .sub-content .sub-text .sub-big-text {
+    font-size: 4.5rem;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+}
+
+.main .subscribe .sub-content form input {
+    display: block;
+}
+
+.main .subscribe .sub-content form input[type="text"],
+.main .subscribe .sub-content form input[type="email"] {
+    border-radius: 6px;
+    border: 1px solid var(--color-dark);
+    background-color: var(--color-dark);
+    width: 522px;
+    height: 82px;
+    color: var(--color-white-lightness);
+    font-size: 1.5rem;
+    line-height: 28.8px;
+    padding-left: 19px;
+    margin-bottom: 21px;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid var(--color-dark);
+    -webkit-text-fill-color: var(--color-white-lightness);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.main .subscribe .sub-content form button {
+    border-radius: 6px;
+    background-color: var(--color-blue);
+    border: none;
+    outline: none;
+    padding: 9px 15px 10px 19px;
+    color: var(--color-white);
+}
+
+.main .subscribe > svg {
+    position: absolute;
+    bottom: -31px;
+    left: -35px;
+}
+
+.main .reviews {
+    margin-top: 200px;
+}
+
+.main .reviews .review {
+    border-radius: 32px;
+    background: var(--color-black);
+    --gap: 16px;
+    --columns: 3;
+    width: calc((100% - (var(--gap) * var(--columns))) / var(--columns));
+    display: inline-block;
+    height: 364px;
+    margin-right: var(--gap);
+}
+
+.main .reviews .review:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.main .reviews .review:nth-of-type(3) {
+    margin-bottom: var(--gap);
+}
+
+.main .reviews .review .review-inside {
+    padding: 37px;
+}
+
+.main .reviews .review .review-text {
+    font-size: 2.250rem;
+    line-height: 43.2px;
+    margin-top: 30px;
+    flex-grow: 1;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 173px;
+}
+
+.main .reviews .review .name {
+    color: var(--color-white-lightness);
+    font-size: 1.5rem;
+    line-height: 28.8px;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    padding: 100px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .logotype {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer .links, .footer .licenses {
+    flex-shrink: 0;
+}
+
+.footer .links ul li, .footer .licenses ul li {
+    font-size: 1.063rem;
+    line-height: 27px;
+    list-style-type: none;
+}
+
+.footer .listen-on {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}

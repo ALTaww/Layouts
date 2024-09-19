@@ -1,0 +1,64 @@
+@media screen and (max-width: 1199px) {
+    .items .box {
+        width: calc((100% - 100px) / 2 );
+    }
+    .news .box {
+        width: calc(100% / 2 - 1 * 1.1%);
+    }
+    .news h2, .adv h2, .sub h2 {
+        margin: 50px 0;
+    }
+    .adv > div {
+        display: block;
+    }
+    .adv div p {
+        max-width: none;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .sub h2 {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .block1 {
+        display: block;
+        text-align: center;
+    }
+    .block1 .menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adv > div div {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .adv > div div figure {
+        margin-bottom: 45px;
+    }
+    .block1 .items .sort p {
+        margin-top: 30px;
+    }
+    .boxes .box figure p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sub form div input[type="submit"] {
+        margin-top: 20px;
+    }
+    .items .box {
+        width: calc((100% - 100px) / 1 );
+    }
+}
+@media screen and (max-width: 375px) {
+    .news h2, .adv h2, .sub h2 {
+        margin: 40px 0;
+    }
+    .news h2, .adv h2, .sub h2 {
+        font-size: 1.5em;
+    }
+    .sub .title {
+        font-size: 1em;
+    }
+}

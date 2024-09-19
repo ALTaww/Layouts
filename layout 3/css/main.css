@@ -1,0 +1,208 @@
+.block1 {
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.block1 .menu {
+    width: 200px;
+}
+
+.block1 .menu a {
+    display: block;
+    text-decoration: none;
+    color: #7b7b7d;
+    font-size: 1.125em;
+    margin-bottom: 8px;
+    padding: 12px 25px;
+}
+
+.block1 .menu a:hover, .block1 .menu a.active {
+    color: white;
+    background-color: #ebb217;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.block1 .items {
+    padding-left: 25px;
+}
+
+.block1 .items .sort {
+    margin-bottom: 25px;
+}
+
+.block1 .items .sort p {
+    color: #444444;
+    font-size: 1em;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.block1 .items .sort p a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    width: 65px;
+    background-image: url(../images/main/up\ icon.png);
+    background-position: 100% 50%;
+}
+
+.block1 .items .sort p a:hover, .block1 .items .sort p a.active {
+    background-image: url(../images/main/down-icon.png);
+    color: #ebb217;
+    font-weight: 600;
+}
+
+.items .box {
+    width: calc((100% - 100px) / 3 );
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 28px;
+}
+
+.box figure img {
+    width: 100%;
+}
+
+.box figure figcaption {
+    padding-left: 23px;
+    color: #4b4b4e;
+}
+
+.box figure figcaption p {
+    font-size: 0.938em;
+}
+
+.box figure figcaption p span {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.box .title {
+    color: #4b4b4e;
+    font-size: 0.875em;
+    padding-left: 23px;
+    margin-top: 10px;
+} 
+
+.box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #dfa52b;
+    color: #fff;
+    margin-top: 15px;
+    border: none;
+}
+
+.box button:hover {
+    cursor: pointer;
+}
+
+.items .pagination {
+    text-align: center;
+}
+
+.items .pagination img {
+    width: 20px;
+}
+
+.items .pagination a {
+    margin: 0 5px;
+    color: #686868;
+    text-decoration: none;
+}
+
+.items .pagination a:hover, .items .pagination a.active {
+    color: #ebb217;
+    font-weight: 900;
+}
+
+.news h2, .adv h2, .sub h2 {
+    text-align: center;
+    margin: 70px 0;
+    color: #4b4b4e;
+    font-size: 1.875em;
+    font-weight: 600;
+}
+
+.news .box {
+    width: calc(100% / 4 - 1 * 1.1%);
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+.adv div p {
+    color: #838388;
+    font-size: 1.125em;
+    font-weight: 300;
+    max-width: 345px;
+}
+
+.adv div p span {
+    font-weight: bold;
+}
+.adv div figure {
+    text-align: center;
+    margin: 0 50px;
+    width: calc(100% / 4 - 1 * 1.1%);
+}
+
+.adv div figure img {
+    width: 100%;
+}
+
+.adv div figure figcaption {
+    color: #a9a9ad;
+    font-size: 0.875em;
+    font-weight: 300;
+}
+
+.sub {
+    text-align: center;
+}
+
+.sub h2 {
+    margin-bottom: 10px;
+}
+
+.sub .title {
+    font-size: 1.25em;
+    color: #4b4b4e;
+    margin-bottom: 45px;
+}
+
+.sub form div input {
+    border-radius: 20px;
+    font-size: 0.938em;
+}
+
+.sub form div input[type="email"] {
+    padding: 15px;
+    border: 1px solid #9a9a9a;
+    width: 260px;
+}
+
+.sub form div input[type="submit"] {
+    padding: 15px;
+    border: 1px solid #9a9a9a;
+    width: 260px;
+    text-align: center;
+    background-color: #4b4b4e;
+    color: white;
+}
+
+.sub form div input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.sub p:not(.title) {
+    font-size: 13px;
+    color: #8b8b8d;
+    margin: 15px 0 60px 0;
+}
+
+.sub p:not(.title) a {
+    color: #9393f1;
+}
